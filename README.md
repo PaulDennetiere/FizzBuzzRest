@@ -1,6 +1,6 @@
 # Fizz Buzz exercise
 
-This is a Rest Server that can received parametrized query and will respond a json representing the list of output for fizzbuzz with those parameters.
+This is a Rest Server that can receive parametrized query and will respond a json representing the list of output for fizzbuzz with those parameters.
 
 It is written entirely in Go (aka Golang).
 
@@ -38,7 +38,14 @@ Then only you can run the binary:
 ____
 ### Usage
 
-This expose a rest API, that you can query easily. This API will always return a JSON. It contains the data if everything is OK, an error describing the problem otherwise. This API will only accept 'GET' method, and will trigger errors if parameters doesn't respect internal rules.   
+This expose a rest API, that you can query easily. This API will always return a JSON. It contains the data if everything is OK, an error describing the problem otherwise. This API will only accept 'GET' method, and will trigger errors if parameters doesn't respect internal rules.
+
+The set of paramaters is the following: 
+ - int1
+ - int2
+ - string1
+ - string2
+ - limit
 
 Example : 
 ```sh
