@@ -27,7 +27,7 @@ func (h Fizzbuzz) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		buf, err := json.Marshal(resp)
 		if err != nil {
-			panic(err)
+			panic(err) // If the marshal return an error, this is an internal error. This will be handled by the recover handler.
 		}
 		w.Write(buf)
 		return

@@ -5,7 +5,6 @@ This is a Rest Server that can receive parametrized query and will respond a jso
 It is written entirely in Go (aka Golang).
 
 ## Usage
-____
 ### Build
 
 To build this project you will have to get its dependencies. 
