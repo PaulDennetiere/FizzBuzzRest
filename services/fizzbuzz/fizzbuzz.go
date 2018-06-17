@@ -39,7 +39,7 @@ func (f *Fizzbuzzer) Fizzbuzz() ([]string, error) {
 		return result, errors.New("string1 and string2 must be different")
 	}
 	for i := 1; i <= f.limit; i++ {
-		if i%(f.int1*f.int2) == 0 {
+		if i%f.int1 == 0 && i%f.int2 == 0 {
 			result = append(result, f.string1+f.string2)
 		} else if i%f.int2 == 0 {
 			result = append(result, f.string2)
